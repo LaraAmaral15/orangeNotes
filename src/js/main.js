@@ -46,7 +46,7 @@ new Glider(document.querySelector('.glider'), {
       }
     },{
       // screens greater than >= 1024px
-      breakpoint: 304,
+      breakpoint: 310,
       settings: {
         slidesToShow: 1.5,
         slidesToScroll: 1,
