@@ -3,30 +3,30 @@
     margin: 0 1rem;
   }
 
-  .p-slider {
+  .cards {
     width: 100%;
   }
 
-  .product-slider-heading {
+  .card-header {
     text-align: center;
     font-size: 1.3rem;
     display: flex;
   }
 
-  .p-img a,
-  .p-img {
+  .cards-img a,
+  .cards-img {
     height: 20rem;
   }
 
-  .price-buy .p-price {
+  .cards-titulo-btn .card-titulo {
     font-size: 1.1rem;
   }
 
-  .p-img-container:hover .p-img-back {
+  .cards-img-container:hover .p-img-back {
     display: none;
   }
 
-  .p-img-container:hover .p-img-front {
+  .cards-img-container:hover .p-img-front {
     display: block;
   }
 }
