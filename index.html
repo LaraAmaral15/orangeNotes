@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange Notes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/glider.css">
+</head>
+<body>
+
+  <nav id="navegacao">
+    <div class="container">
+        <a class="logo" href="index.html">
+          <img src="src/images/logo.png" alt="Logo Orange Notes">
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li><a onclick="fechaMenu()" href="#">Item 1</a></li>
+            <li><a onclick="fechaMenu()" href="#">Item 2</a></li>
+            <li><a onclick="fechaMenu()" href="#">Item 3</a></li>
+          </ul>
+        </div>
+
+        <button aria-expanded="false" aria-label="Abrir menu" onclick="abreMenu()" class="abre-menu">
+          <img src="src/images/menu.png" alt="Menu hambúrguer" id="icon-menu">
+        </button>
+        
+        <button aria-expanded="true" aria-label="Fechar menu" onclick="fechaMenu()" class="fecha-menu">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="banner">
+      <div class="container">
+        <h1>Orange Notes</h1>
+        <p>Conheça a <span>Orange Notes</span> a melhor plataforma para organizar seus estudos!</p>
+  
+        <img src="src/images/ilustracao.png" alt="">    
+      </div>
+    </section>
+
+    <section class="p-slider">
+      <h3 class="product-slider-heading">Categorias</h3>
+
+      <div class="slider-btns">
+        <button aria-label="Previous" class="glider-prev">
+          <span></span>
+        </button>
+        <button aria-label="Next" class="glider-next">
+          <span></span>
+        </button>
+      </div>
+
+      <div class="glider-contain">
+        <div class="glider">
+          
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="">
+                  <img src="src/images/ilustracao.png" class="p-img-front" alt="">
+                  <img src="src/images/logo.png" class="p-img-back" alt="">
+                </a>
+              </div>
+            </div>
+          
+            <div class="p-box-text">
+              <div class="product-category">
+                <span>Cursos</span>
+              </div>
+          
+              <a href="#" class="product-title"> Aqui vai o título </a>
+          
+              <div class="price-buy">
+                <span class="p-price">Texto</span>
+                <a href="#" class="p-buy-btn">Mais</a>
+              </div>
+          
+            </div>
+          </div>
+
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="">
+                  <img src="src/images/ilustracao.png" class="p-img-front" alt="">
+                  <img src="src/images/logo.png" class="p-img-back" alt="">
+                </a>
+              </div>
+            </div>
+          
+            <div class="p-box-text">
+              <div class="product-category">
+                <span>Cursos</span>
+              </div>
+          
+              <a href="#" class="product-title"> Aqui vai o título </a>
+          
+              <div class="price-buy">
+                <span class="p-price">Texto</span>
+                <a href="#" class="p-buy-btn">Mais</a>
+              </div>
+          
+            </div>
+          </div>
+
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="">
+                  <img src="src/images/ilustracao.png" class="p-img-front" alt="">
+                  <img src="src/images/logo.png" class="p-img-back" alt="">
+                </a>
+              </div>
+            </div>
+          
+            <div class="p-box-text">
+              <div class="product-category">
+                <span>Cursos</span>
+              </div>
+          
+              <a href="#" class="product-title"> Aqui vai o título </a>
+          
+              <div class="price-buy">
+                <span class="p-price">Texto</span>
+                <a href="#" class="p-buy-btn">Mais</a>
+              </div>
+          
+            </div>
+          </div>
+
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="">
+                  <img src="src/images/ilustracao.png" class="p-img-front" alt="">
+                  <img src="src/images/logo.png" class="p-img-back" alt="">
+                </a>
+              </div>
+            </div>
+          
+            <div class="p-box-text">
+              <div class="product-category">
+                <span>Cursos</span>
+              </div>
+          
+              <a href="#" class="product-title"> Aqui vai o título </a>
+          
+              <div class="price-buy">
+                <span class="p-price">Texto</span>
+                <a href="#" class="p-buy-btn">Mais</a>
+              </div>
+          
+            </div>
+          </div>
+
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="">
+                  <img src="src/images/ilustracao.png" class="p-img-front" alt="">
+                  <img src="src/images/logo.png" class="p-img-back" alt="">
+                </a>
+              </div>
+            </div>
+          
+            <div class="p-box-text">
+              <div class="product-category">
+                <span>Cursos</span>
+              </div>
+          
+              <a href="#" class="product-title"> Aqui vai o título </a>
+          
+              <div class="price-buy">
+                <span class="p-price">Texto</span>
+                <a href="#" class="p-buy-btn">Mais</a>
+              </div>
+          
+            </div>
+          </div>
+
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="">
+                  <img src="src/images/ilustracao.png" class="p-img-front" alt="">
+                  <img src="src/images/logo.png" class="p-img-back" alt="">
+                </a>
+              </div>
+            </div>
+          
+            <div class="p-box-text">
+              <div class="product-category">
+                <span>Cursos</span>
+              </div>
+          
+              <a href="#" class="product-title"> Aqui vai o título </a>
+          
+              <div class="price-buy">
+                <span class="p-price">Texto</span>
+                <a href="#" class="p-buy-btn">Mais</a>
+              </div>
+          
+            </div>
+          </div>
+
+
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="">
+                  <img src="src/images/ilustracao.png" class="p-img-front" alt="">
+                  <img src="src/images/logo.png" class="p-img-back" alt="">
+                </a>
+              </div>
+            </div>
+          
+            <div class="p-box-text">
+              <div class="product-category">
+                <span>Cursos</span>
+              </div>
+          
+              <a href="#" class="product-title"> Aqui vai o título </a>
+          
+              <div class="price-buy">
+                <span class="p-price">Texto</span>
+                <a href="#" class="p-buy-btn">Mais</a>
+              </div>
+          
+            </div>
+          </div>
+
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="">
+                  <img src="src/images/ilustracao.png" class="p-img-front" alt="">
+                  <img src="src/images/logo.png" class="p-img-back" alt="">
+                </a>
+              </div>
+            </div>
+          
+            <div class="p-box-text">
+              <div class="product-category">
+                <span>Cursos</span>
+              </div>
+          
+              <a href="#" class="product-title"> Aqui vai o título </a>
+          
+              <div class="price-buy">
+                <span class="p-price">Texto</span>
+                <a href="#" class="p-buy-btn">Mais</a>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      
+        <div role="tablist" class="dots"></div>
+      </div>
+
+    </section>
+  </main>
+
+
+  <script src="src/js/glider.js"></script>
+  <script src="src/js/main.js"></script>
+
+</body>
+</html>
