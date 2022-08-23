@@ -9,8 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
   <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
   <link rel="stylesheet" href="src/css/glider.css">
 </head>
 <body>
@@ -53,7 +55,7 @@
     </section>
 
     <section class="cards">
-      <h3 class="card-header">Categorias</h3>
+      <h2 class="section-header">Categorias</h2>
 
       <div class="cards-btns">
         <button aria-label="Previous" class="glider-prev">
@@ -106,7 +108,7 @@
                 </div>
             
                 <div class="cards-titulo-btn">
-                  <a href="#" class="card-titulo">Vídeo Aulas</a>
+                  <a href="#" class="card-titulo">Vídeos</a>
                   <a href="#" class="card-btn">></a>
                 </div>              
           </div>
@@ -184,6 +186,29 @@
 
       </div>
 
+    </section>
+
+    <section class="to-do">
+      <div class="container">
+        <h2 class="section-header">To do</h2>
+
+        <div class="to-do-container">
+
+          <div class="to-do-header">
+            <button><i class='bx bxs-trash-alt'></i></button>
+          </div>
+          <hr />
+          <br />
+          <div class="inserir">
+            <input class="inserir-texto" id="toDoInput" type="text" />
+            <button><i class='bx bx-plus' id="inserir-icon"></i></button>
+          </div>
+
+          <ul id="listaToDo"></ul>
+
+        </div>
+        
+      </div>
     </section>
   </main>
 
