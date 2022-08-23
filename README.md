@@ -13,15 +13,24 @@
 <p>No segundo dia melhorei a sessão de cards, a estilizando, animei o título e fiz melhorias no código</p>
 <h3> Destaques: </h3>
 <ul> 
-  <li>Aprendi sobre animações com CSS.</li>
-  <li>Utilizei @keyframes</li>
+  <li>Aprendi sobre animações com CSS;</li>
+  <li>Utilizei @keyframes;</li>
 </ul>
 
 <h2>3° Dia</h2>
 <p>No terceiro dia fiz a sessão de to-do onde o usuário poderar anotar suas tarefas do dia, marcá-las como concluído (riscar) e excluí-las</p>
 <h3> Destaques: </h3>
 <ul> 
-  <li>Conheci e utilizei o boxicons para colocar os ícones na to-do</li>
-  <li>Coloquei em prática conhecimentos sobre js e aprendi novas coisas</li>
-  <li>Deixei o site mais dinâmico e útil para o usuário</li>
+  <li>Conheci e utilizei o boxicons para colocar os ícones na to-do;</li>
+  <li>Coloquei em prática conhecimentos sobre js e aprendi novas coisas;</li>
+  <li>Deixei o site mais dinâmico e útil para o usuário;</li>
+</ul>
+
+<h2>4° Dia</h2>
+<p>No quarto dia fiz a sessão banner que é a primeira sessão. Também deixei o site responsivo, para desktop e mobile.</p>
+<h3> Destaques: </h3>
+<ul> 
+  <li>Utilizei a propriedade "float" para fazer o menu lateral, ela determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu container, onde textos e elementos em linha irão se posicionar ao seu redor;</li>
+  <li>Trabalhei com media queries;</li>
+  <li>Utilizei "position: absolute", para posicionar os elementos do banner;</li>
 </ul>
