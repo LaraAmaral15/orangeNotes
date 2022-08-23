@@ -11,8 +11,9 @@
 
   --nav-height: 7.2rem;
 
-  --bg-light:hsl(180, 14%, 97%);;
-  --orange-bg-card: rgba(255, 126, 20, 0.7);
+  --bg-light:hsl(180, 14%, 97%);
+  --bg-orange: rgba(235, 113, 0, 0.3);
+  --orange-light: rgba(255, 126, 20, 0.7);
 
   --orange: #ff7d13;
   --white: rgb(255, 255, 255);
@@ -66,10 +67,10 @@ nav {
   width: 100vw;
 
   top: 0;
-  margin-top: 1rem;
+  padding: 1rem 0 8rem 0;
     
   z-index: 100;
-  position: fixed;
+  background-color: var(--orange-light);
 }
 
 nav .container {
@@ -98,7 +99,6 @@ nav .fecha-menu {
 
 body.menu-expandido {
   overflow: hidden;
-  border: 1px solid blueviolet;
 }
 
 .menu,
@@ -129,6 +129,7 @@ body.menu-expandido .menu {
 
   transition: transform 300ms;
   transform: translateX(0);
+  z-index: 50;
 }
 
 .menu ul:nth-child(1) {
@@ -159,19 +160,22 @@ body.menu-expandido button {
 #banner {
   padding-block: 0;
   padding-top: calc(4.1rem + var(--nav-height));
+
 }
 
 #banner::before {
+  background-color: var(--bg-orange);
   content: '';
   width: 100%;
-  height: calc(76% - var(--nav-height));
+  height: 76%;
   display: block;
 
-  border: 1px solid;
+  border: 0.1rem solid;
   border-color: var(--orange);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 
-  margin-top: calc(3rem + var(--nav-height));
-  border-radius: 4%;
+  margin-top: 9rem;
 
   position: absolute;
   top: 0;
@@ -179,14 +183,24 @@ body.menu-expandido button {
   z-index: -1;
 }
 
+#banner .container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 #banner h1 {
   font-family: 'Righteous', cursive;
   letter-spacing: 0.2rem;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 #banner p {
-  margin-top: 1.5rem;
+  margin: 1.3rem auto 0 auto;
+  width: 70%;
+  display: block;
 }
 
 #banner p span {
@@ -211,7 +225,7 @@ body.menu-expandido button {
 /* Animação do texto */
 
 .animacao-texto {
-  animation: cursorPiscando 500ms infinite normal, digitando 4s steps(40) infinite normal both;
+  animation: cursorPiscando 500ms infinite normal, digitando 4.5s steps(40) infinite normal both;
 }
 
 @keyframes digitando {
@@ -219,7 +233,7 @@ body.menu-expandido button {
     width: 0;
   }
   to {
-    width: 8em;
+    width: 7.1em;
   }
 }
 
@@ -242,6 +256,7 @@ body.menu-expandido button {
   width: 100%;
   margin: 3rem auto 1rem auto;
   padding: 0 1rem;
+  z-index: 2;
 }
 
 .cards-btns button {
@@ -261,11 +276,12 @@ body.menu-expandido button {
   padding: 1rem 1.5rem 1rem 1rem;
   position: relative;
   text-decoration: none;
+  color: var(--white);
 }
 
 .cards-btns button span::before,
 .cards-btns button span::after {
-  border-right: 0.2rem solid;
+  border-right: 0.3rem solid;
   display: block;
   height: 0.8rem;
   margin-top: -0.6rem;
@@ -303,7 +319,7 @@ body.menu-expandido button {
 }
 
 .cards-box {
-  background-color: var(--orange-bg-card);
+  background-color: var(--orange-light);
   display: flex;
   flex-direction: column;
 
@@ -421,6 +437,10 @@ body.menu-expandido button {
   background-color: #e77111;
 }
 
+.bx-chevron-right {
+  color: var(--white);
+}
+
 /* TO DO =================================================================================*/
 
 .to-do-container {
@@ -446,7 +466,7 @@ body.menu-expandido button {
 
 .inserir {
   padding: 1rem;
-  background-color: var(--orange-bg-card);
+  background-color: var(--orange-light);
   border-radius: 1rem;
   display: flex;
   box-shadow: 0.6rem 0.5rem 1rem 0 gray;
@@ -480,7 +500,7 @@ body.menu-expandido button {
 .listaToDo {
   margin-top: 2rem;
   padding: 1rem;
-  background: var(--orange-bg-card);
+  background: var(--orange-light);
   border-radius: 1rem;
   box-shadow: 0.6rem 0.5rem 1rem 0 gray;
   display: flex;

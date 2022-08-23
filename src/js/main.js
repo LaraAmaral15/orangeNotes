@@ -27,7 +27,6 @@ new Glider(document.querySelector('.glider'), {
 
     responsive: [
     {
-      // screens greater than >= 775px
       breakpoint: 1200,
       settings: {
         // Set to `auto` and provide item width to adjust to viewport
@@ -35,28 +34,31 @@ new Glider(document.querySelector('.glider'), {
         slidesToScroll: 2,
       }
     },{
-      // screens greater than >= 1024px
       breakpoint: 900,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
       }
     },{
-      // screens greater than >= 1024px
       breakpoint: 640,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
       }
     },{
-      // screens greater than >= 1024px
+
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+      }
+    },{
       breakpoint: 310,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
       }
     },{
-      // screens greater than >= 1024px
       breakpoint: 0,
       settings: {
         slidesToShow: 1,
