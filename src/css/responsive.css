@@ -1,16 +1,39 @@
+@media (max-width: 775px) {
+
+  /* TO DO ======*/
+  
+  .to-do-header button {
+    right: 7%;
+  }
+  .inserir input {
+    width: 100%;
+  }
+
+  .inserir button {
+    width: 20%;
+  }
+
+  .inserir i {
+    font-size: 3rem;
+    padding: 0;
+  }
+}
+
+
 @media(max-width: 500px) {
+
+  .section-header {
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  /* CARDS =========  */
   .cards-box {
     margin: 0 1rem;
   }
 
   .cards {
     width: 100%;
-  }
-
-  .card-header {
-    text-align: center;
-    font-size: 1.3rem;
-    display: flex;
   }
 
   .cards-img a,
@@ -29,9 +52,28 @@
   .cards-img-container:hover .p-img-front {
     display: block;
   }
+
+  /* TO DO ======*/
+
+  .to-do-header button {
+    right: 6%;
+  }
+
+  .inserir input {
+    width: 100%;
+  }
+
+  .inserir button {
+    width: 30%;
+  }
+
+  .inserir i {
+    font-size: 3rem;
+    padding: 0;
+  }
 }
 
-@media(max-width: 320px) {
+@media(max-width: 400px) {
   .p-img a,
   .p-img {
     height: 19rem;

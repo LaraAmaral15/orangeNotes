@@ -34,7 +34,15 @@ body {
 }
 
 section {
-  padding-block: 10rem;
+  padding-block: 3rem;
+}
+
+.section-header {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: gray;
+  text-align: center;
+  margin: 0;
 }
 
 .container {
@@ -45,6 +53,10 @@ section {
 
 ul {
   list-style: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* NAVEGAÇAÕ ================================================================================*/
@@ -171,8 +183,10 @@ body.menu-expandido button {
   font-family: 'Righteous', cursive;
   letter-spacing: 0.2rem;
   font-size: 2.5rem;
+}
 
-  margin: 1rem 0;
+#banner p {
+  margin-top: 1.5rem;
 }
 
 #banner p span {
@@ -283,18 +297,10 @@ body.menu-expandido button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem auto;
+  margin: 5rem auto 0 auto;
+  padding-top: 12rem;
   width: 95%;
 }
-
-.card-header {
-  font-size: 2.8rem;
-  text-transform: uppercase;
-  color: gray;
-  text-align: center;
-  margin: 0;
-}
-
 
 .cards-box {
   background-color: var(--orange-bg-card);
@@ -413,6 +419,104 @@ body.menu-expandido button {
 
 .cards-titulo-btn .card-btn:hover {
   background-color: #e77111;
+}
+
+/* TO DO =================================================================================*/
+
+.to-do-container {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.to-do-container ul {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 2rem;
+}
+
+.to-do-header button {
+  position: absolute;
+  right: 30%;
+  margin-top: -5rem;
+}
+
+.to-do-header i {
+  font-size: 2.2rem;
+}
+
+.inserir {
+  padding: 1rem;
+  background-color: var(--orange-bg-card);
+  border-radius: 1rem;
+  display: flex;
+  box-shadow: 0.6rem 0.5rem 1rem 0 gray;
+}
+
+.inserir-texto {
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  width: 90%;
+}
+
+.inserir button {
+  width: 10%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.bx-plus {
+  font-size: 3rem;
+  margin-left: 1rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: var(--white);
+}
+
+.listaToDo {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--orange-bg-card);
+  border-radius: 1rem;
+  box-shadow: 0.6rem 0.5rem 1rem 0 gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.listaToDo span {
+  width: 8%;
+  color: var(--white);
+}
+
+.listaToDo input {
+  width: 10%;
+  outline: none;
+  accent-color: currentcolor;
+}
+
+.listaToDo i {
+  font-size: 2.2rem;
+  color: var(--orange);
+}
+
+.linhaRiscada {
+  text-decoration: line-through;
+}
+
+.listaToDo input {
+  color: var(--white);
+}
+
+.listaToDo span {
+  text-align: center;
+  width: 80%;
+  word-wrap: break-word;
 }
 
 
