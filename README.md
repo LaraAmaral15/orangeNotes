@@ -34,3 +34,11 @@
   <li>Trabalhei com media queries;</li>
   <li>Utilizei "position: absolute", para posicionar os elementos do banner;</li>
 </ul>
+
+<h2>5° Dia</h2>
+<p>No quinto dia mudei a navbar e a deixei na parte de cima da tela, fiz algumas alterações básicas na página de início e arrumei alguns arquivos. O principal feito de hoje foi começar a desenvolver uma nova página, "Organização", nela comecei colocando um calendário para o usuário ter um overview mensal.</p>
+<h3> Destaques: </h3>
+<ul> 
+  <li>Conheci e utilizei o "Evo Calendar", uma excelente opção para fazer um calendário de forma mais prática;</li>
+  <li>Estou me acostumando a ler documentações e sair da minha zona de conforto;</li>
+</ul>
