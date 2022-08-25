@@ -1,0 +1,530 @@
+/* BANNER =============================================================================*/
+
+#banner {
+  padding-block: 0;
+  padding-top: calc(4.1rem + var(--nav-height));
+}
+
+#banner::before {
+  background-color: var(--bg-orange);
+  content: '';
+  width: 100%;
+  height: 76%;
+  display: block;
+
+  border: 0.1rem solid;
+  border-color: var(--orange);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  margin-top: 9rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#banner .container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#banner h1 {
+  font-family: 'Righteous', cursive;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+}
+
+#banner p {
+  margin: 1.3rem auto 0 auto;
+  width: 70%;
+  display: block;
+}
+
+#banner p span {
+  color: var(--orange);
+}
+
+#banner img {
+  width: 26.4rem;
+
+  display: block;
+  margin-inline: auto;
+  object-position: 0 2rem;
+}
+
+#banner .texto-banner {
+  border-right: 0.2rem solid rgba(255, 255, 255, 0.75);
+  color: rgba(29, 25, 25, 0.75);
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animação do texto */
+
+.animacao-texto {
+  animation: cursorPiscando 500ms infinite normal, digitando 4.5s steps(40) infinite normal both;
+}
+
+@keyframes digitando {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 7.1em;
+  }
+}
+
+@keyframes cursorPiscando {
+  from {
+    border-right: rgba(54, 54, 54, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* CARDS ========================================================================================*/
+
+/* Botão cards */
+
+.cards-btns {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 3rem auto 1rem auto;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.cards-btns button {
+  position: static;
+  transform: translate(0, 0);
+  background-color: var(--orange);
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  border-radius: 80rem;
+}
+
+.cards-btns button span {
+  font-weight: bold;
+  padding: 1rem 1.5rem 1rem 1rem;
+  position: relative;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.cards-btns button span::before,
+.cards-btns button span::after {
+  border-right: 0.3rem solid;
+  display: block;
+  height: 0.8rem;
+  margin-top: -0.6rem;
+  position: absolute;
+  transform: rotate(135deg);
+  right: 1rem;
+  top: 50%;
+  width: 0;
+  content: '';
+}
+
+.cards-btns button span::after {
+  margin-top: -0.1rem;
+  transform: rotate(45deg);
+}
+
+.cards-btns .glider-prev {
+  transform: rotate(180deg);
+}
+
+/* Conteúdo cards */
+
+.glider.draggable {
+  overflow-x: hidden;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto 0 auto;
+  padding-top: 12rem;
+  width: 95%;
+}
+
+.cards-box {
+  background-color: var(--orange-light);
+  display: flex;
+  flex-direction: column;
+
+  width: 30rem;
+
+  margin: 0 2rem;
+  padding: 0 2rem;
+
+  position: relative;
+  border-radius: 1rem;
+}
+
+.cards-img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.cards-img a,
+.cards-img {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+}
+
+.cards-img a img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: contain;
+  animation: fade 0.6s;
+}
+
+.cards-img-back {
+  display: none;
+}
+
+.cards-img-container:hover .cards-img-back {
+  display: block;
+}
+
+.cards-img-container:hover .cards-img-front {
+  display: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.cards-box-texto {
+  margin-top: 0.5rem;
+  width: 100%;
+
+  margin: 0;
+  padding: 5rem 1rem 1rem 2rem;
+}
+
+.cards-texto-secundario {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards-texto-secundario span {
+  color: var(--white);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.card-titulo {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 3rem;
+
+  transition: all ease 0.3s;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.cards-titulo-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.cards-titulo-btn .card-btn {
+  background-color: var(--orange);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 40rem;
+
+  margin: 0 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-titulo-btn .card-btn:hover {
+  background-color: #e77111;
+}
+
+.bx-chevron-right {
+  color: var(--white);
+}
+
+/* TO DO =================================================================================*/
+
+.to-do-container {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.to-do-container ul {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 2rem;
+}
+
+.to-do-header button {
+  position: absolute;
+  right: 30%;
+  margin-top: -5rem;
+}
+
+.to-do-header i {
+  font-size: 2.2rem;
+}
+
+.inserir {
+  padding: 1rem;
+  background-color: var(--orange-light);
+  border-radius: 1rem;
+  display: flex;
+  box-shadow: 0.6rem 0.5rem 1rem 0 gray;
+}
+
+.inserir-texto {
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  width: 90%;
+}
+
+.inserir button {
+  width: 10%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.bx-plus {
+  font-size: 3rem;
+  margin-left: 1rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: var(--white);
+}
+
+.listaToDo {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--orange-light);
+  border-radius: 1rem;
+  box-shadow: 0.6rem 0.5rem 1rem 0 gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.listaToDo span {
+  width: 8%;
+  color: var(--white);
+}
+
+.listaToDo input {
+  width: 10%;
+  outline: none;
+  accent-color: currentcolor;
+}
+
+.listaToDo i {
+  font-size: 2.2rem;
+  color: var(--orange);
+}
+
+.linhaRiscada {
+  text-decoration: line-through;
+}
+
+.listaToDo input {
+  color: var(--white);
+}
+
+.listaToDo span {
+  text-align: center;
+  width: 80%;
+  word-wrap: break-word;
+}
+
+/* RESPONSIVO ============================================================ */
+
+@media (min-width: 1024px) {
+  /* BANNER =============================================================================*/
+    #banner {
+      margin-top: var(--nav-heigth);
+      padding: 28rem 2rem;
+      border-bottom: 1px solid;
+      border-color: var(--orange);
+      border-bottom-right-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50rem;
+      background-color: var(--bg-orange);
+      z-index: -1;
+    }
+  
+    #banner::before {
+      height: 100%;
+      width: initial;
+      position: initial;
+      border: none;
+    }
+  
+    section#banner .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #banner img {
+      width: 35rem;
+      height: 35rem;
+  
+    }
+  
+    #banner .texto-banner {
+      position: absolute;
+      left: 34.2%;
+      top: 26.5%;
+      z-index: -1;
+      font-size: 6rem;
+    }
+  
+    #banner .textos-banner p {
+      position: relative;
+      right: 20%;
+      top: 4rem;
+      width: 70%;
+      text-align: start;
+      font-size: 2.5rem;
+    }
+  
+    /* CARDS ========================================================================================*/
+  
+    .cards {
+      margin: 8rem auto;
+      padding-top: 0;
+    }
+  
+  }
+  
+  
+  @media (max-width: 775px) {
+  
+    /* TO DO ======*/
+  
+    .to-do-header button {
+      right: 7%;
+    }
+  
+    .inserir input {
+      width: 100%;
+    }
+  
+    .inserir button {
+      width: 20%;
+    }
+  
+    .inserir i {
+      font-size: 3rem;
+      padding: 0;
+    }
+  }
+  
+  
+  @media(max-width: 500px) {
+  
+    .section-header {
+      justify-content: center;
+      font-size: 3rem;
+    }
+  
+    /* CARDS =========  */
+    .cards-box {
+      margin: 0 1rem;
+    }
+  
+    .cards {
+      width: 100%;
+    }
+  
+    .cards-img-container:hover .p-img-back {
+      display: none;
+    }
+  
+    .cards-img-container:hover .p-img-front {
+      display: block;
+    }
+  
+    /* TO DO ======*/
+  
+    .to-do-header button {
+      right: 6%;
+    }
+  
+    .inserir input {
+      width: 100%;
+    }
+  
+    .inserir button {
+      width: 30%;
+    }
+  
+    .inserir i {
+      font-size: 3rem;
+      padding: 0;
+    }
+  }
+  
+  @media(max-width: 400px) {
+  
+    .p-img a,
+    .p-img {
+      height: 19rem;
+    }
+  
+    .slider-btns {
+      padding: 0;
+    }
+}
