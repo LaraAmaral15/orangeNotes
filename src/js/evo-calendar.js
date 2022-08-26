@@ -13,16 +13,119 @@
 $(document).ready(function() {
     $('#calendar').evoCalendar({
 
-        theme: "Orange Coral",
+        theme: "Default",
+        language: "pt",
 
         calendarEvents: [
             {
-                id: 'bHay68s', // Event's ID (required)
-                name: "New Year", // Event name (required)
-                date: "January/1/2020", // Event date (required)
+                id: 'event1', // Event's ID (required)
+                name: "Ano Novo", // Event name (required)
+                date: "January/1/2022", // Event date (required)
                 type: "holiday", // Event type (required)
                 everyYear: true // Same event every year (optional)
             },
+            {
+                id: 'event2',
+                name: "Quarta-feira de Cinzas", 
+                date: "Março/2/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event3', 
+                name: "Dia da Mulher", 
+                date: "Março/8/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event4', 
+                name: "Páscoa", 
+                date: "April/17/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event5', 
+                name: "Tira Dentes", 
+                date: "April/21/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event6', 
+                name: "Dia do Trabalho", 
+                date: "May/1/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event7', 
+                name: "Dia das Mães", 
+                date: "May/8/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event8', 
+                name: "Dia dos Namorados", 
+                date: "June/12/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event9', 
+                name: "Corpus Christ", 
+                date: "June/16/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event10', 
+                name: "Dia dos Pais", 
+                date: "August/14/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event11', 
+                name: "Independencia do Brasil", 
+                date: "September/7/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event12', 
+                name: "Dia doas Crianças", 
+                date: "October/12/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event13', 
+                name: "Finados", 
+                date: "November/2/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event14', 
+                name: "Proclamação da República", 
+                date: "November/15/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            {
+                id: 'event15', 
+                name: "Natal", 
+                date: "December/25/2022", 
+                type: "holiday", 
+                everyYear: true 
+            },
+            
+
+
+
             {
                 name: "Vacation Leave",
                 badge: "02/13 - 02/15", // Event badge (optional)
