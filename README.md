@@ -42,3 +42,11 @@
   <li>Conheci e utilizei o "Evo Calendar", uma excelente opção para fazer um calendário de forma mais prática;</li>
   <li>Estou me acostumando a ler documentações e sair da minha zona de conforto;</li>
 </ul>
+
+<h2>6° Dia</h2>
+<p>No sexto dia personalizei o calendário, o deixando com a identidade visual do site.</p>
+<h3> Destaques: </h3>
+<ul> 
+  <li>Estou aprendendo a tirar o melhor do DevTools, é algo que temos de fácil acesso e eu não tinha o costume de utilizar, inspecionando através dele consegui personalizar todo o calendário, vendo as classes e analisando o código;</li>
+  <li>Coloquei em prática o que sei sobre especificidade, no css isso é muito importante;</li>
+</ul>
