@@ -1,4 +1,10 @@
 <h1>Orange Notes</h1>
+<p><strong>Problemática:</strong> Quando estamos no processo de aprendizado, acabamos consumindo conteúdos sobre diversos assuntos, seja através de cursos, vídeo aulas, artigos  entre outros.
+Isso acaba desorganizando o dia a dia de estudo, criando o sentimento de que não estamos progredindo, e consequentemente, não evoluímos nessa busca pelo conhecimento.
+</p>
+
+<p><strong>Proposta:</strong> Diante da nossa problemática surge o Orange Notes, uma plataforma onde as pessoas poderão organizar seus cursos, vídeo aulas, artigos e tudo que envolve aprendizado em um local só, podendo ver seu progresso.
+</p>
 
 <h2>1° Dia</h2>
 <p>No primeiro dia foi feita a header e iniciada a 1° e 2° sessão</p>
@@ -49,4 +55,11 @@
 <ul> 
   <li>Estou aprendendo a tirar o melhor do DevTools, é algo que temos de fácil acesso e eu não tinha o costume de utilizar, inspecionando através dele consegui personalizar todo o calendário, vendo as classes e analisando o código;</li>
   <li>Coloquei em prática o que sei sobre especificidade, no css isso é muito importante;</li>
+</ul>
+
+<h2>7° Dia</h2>
+<p>No sétimo dia melhorei o código, o organizei e continuei o desenvolvimento da página "Organização".</p>
+<h3> Destaques: </h3>
+<ul> 
+  <li>Estou aprendendo a fazer um código que pode ser reutilizado em várias partes do site;</li>
 </ul>
