@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organização - Orange Notes</title>
+    <link rel="shortcut icon" href="src/images/logo.png" type="image/x-icon">
 
 
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/responsive.css">
     <link rel="stylesheet" href="src/css/organizacao.css">
-    <link rel="stylesheet" type="text/css" href="src/css/evo-calendar/evo-calendar.css" />
+    <link rel="stylesheet" type="text/css" href="src/evo-calendar/evo-calendar.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,8 +49,24 @@
     </nav>
 
     <main>
+    <section id="banner">
+      <div class="container">
+        <img src="src/images/menino.png"
+          alt="menino-bonito-segurando-ilustracao-laranja-icone-do-vetor-dos-desenhos-animados-conceito-de-icone-de-fruta-pessoas-isolado-vetor-premium-estilo-flat-cartoon_138676-3964.png">
+    
+        <div class="textos-banner">
+          <h1 class="animacao-texto texto-banner">Orange Notes</h1>
+          <p>Tenha um overview mensal para organizar seus estudos e poder evoluir cada vez mais!</p>
+        </div>
+    
+    
+      </div>
+    </section>
+   
 
       <section class="calendario">
+        <h2 class="section-header">Calendário</h2>
+
         <div class="container">
           <div id="calendar"></div>
         </div>
@@ -63,5 +79,5 @@
 
     <script src="src/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="src/js/evo-calendar.js"></script>
+    <script src="src/evo-calendar/evo-calendar.js"></script>
 </html>

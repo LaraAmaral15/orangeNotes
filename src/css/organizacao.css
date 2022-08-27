@@ -1,5 +1,8 @@
+/* CALENDÁRIO  ===============================================================================*/
+
 .calendario {
-  margin-top: calc(5rem + var(--nav-height));
+  margin-top: 5rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container .calendar-sidebar {
@@ -31,7 +34,7 @@
 }
 
 .container .event-list>.event-empty {
-  background-color: rgba(255, 126, 20, 0.15);;
+  background-color: rgba(255, 126, 20, 0.15);
   border-color: var(--orange);
 }
 
@@ -41,4 +44,67 @@
 
 .container .calendar-events>.event-header>p {
   margin-bottom: 2rem;
+}
+
+/* RESPONSIVO ============================================================ */
+
+@media (min-width: 1024px) {
+
+  /* BANNER */
+
+  section#banner .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #banner .textos-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #banner .container img {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  #banner .texto-banner {
+    z-index: -1;
+    font-size: 6rem;
+  }
+
+  #banner .textos-banner p {
+    text-align: start;
+    font-size: 2.5rem;
+    width: 70%;
+    color: var(--text-banner);
+  }
+}
+
+@media (max-width: 425px)  {
+  .container .calendar-sidebar>.calendar-year {
+    background-color: var(--orange-light);
+  }
+
+  .container .calendar-sidebar>.month-list>.calendar-months {
+    background-color: var(--orange-light);
+  }
+
+  .container .calendar-sidebar>.month-list {
+    background-color: rgba(245, 190, 127, 0.733);
+  }
+}
+
+@media (max-width: 768px) {
+  .container .calendar-inner::after {
+      background-color: rgba(226, 161, 107, 0.3);
+  }
+}
+  
+@media (max-width: 600px) {
+  .calendario {
+    margin-top: 15rem;
+  }
 }
