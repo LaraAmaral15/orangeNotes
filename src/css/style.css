@@ -17,6 +17,8 @@
 
   --orange: #ff7d13;
   --white: rgb(255, 255, 255);
+
+  --text-banner: rgba(29, 25, 25, 0.75);
 }
 
 html,
@@ -35,15 +37,15 @@ body {
 }
 
 section {
-  padding-block: 3rem;
+  padding-block: 4rem;
 }
 
 .section-header {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   color: gray;
   text-align: center;
-  margin: 0;
+  margin-bottom: 5rem;
 }
 
 .container {
@@ -71,6 +73,8 @@ nav {
 
   z-index: 100;
   background-color: var(--orange-light);
+
+  font-family: 'Roboto', sans-serif;
 }
 
 nav .container {
@@ -153,4 +157,187 @@ body.menu-expandido .logo,
 body.menu-expandido button {
   position: relative;
   z-index: 100;
+}
+
+/* BANNER =============================================================================*/
+ 
+#banner {
+  padding-block: 0;
+  padding-top: calc( var(--nav-height));
+  font-family: 'Roboto', sans-serif;
+}
+
+#banner::before {
+  background-color: var(--bg-orange);
+  content: '';
+  width: 100%;
+  height: 76%;
+  display: block;
+
+  border: 0.1rem solid;
+  border-color: var(--orange);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  margin-top: 9rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#banner .container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#banner h1 {
+  font-family: 'Righteous', cursive;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  color: var(--text-banner);
+  line-height: 10.5rem;
+}
+
+#banner img {
+  width: 26.4rem;
+
+  display: block;
+  margin-inline: auto;
+  object-position: 0 2rem;
+}
+
+#banner .textos-banner p {
+  color: var(--text-banner);
+}
+
+/* RESPONSIVO ========================================================================= */
+
+@media (min-width: 1024px) {
+  .container {
+    width: min(112rem, 100%);
+  }
+
+  /* reset */
+
+  body {
+    text-align: initial;
+  }
+
+  nav {
+    background-color: initial;
+    margin: initial;
+    padding: initial;
+  }
+
+  nav#navegacao .container * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    position: initial;
+    font-weight: initial;
+    transform: initial;
+    background-color: initial;
+    border: 0;
+  }
+
+  nav {
+    height: 0;
+    margin-top: 0;
+  }
+
+  nav#navegacao .fecha-menu,
+  nav#navegacao .abre-menu {
+    display: none;
+  }
+
+  nav#navegacao .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  nav#navegacao .menu ul:nth-child(1) {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  #banner img {
+    display: initial;
+  }
+
+  #banner .texto-banner {
+    margin: initial;
+  }
+
+  /* GERAL */
+  body {
+    font-size: 2.2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* NAVEGACAO */
+
+  nav#navegacao .container {
+    background-color: var(--orange-light);
+    width: 100%;
+  }
+
+  nav .container {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
+  }
+
+  nav#navegacao .logo {
+    margin: 2rem;
+  }
+
+  .menu ul:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    gap: 4.8rem;
+
+    margin-top: 6rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+
+  /* BANNER =============================================================================*/
+  #banner {
+    margin-top: var(--nav-heigth);
+    padding: 28rem 2rem;
+    border-bottom: 1px solid;
+    border-color: var(--orange);
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+    background-color: var(--bg-orange);
+    z-index: -1;
+  }
+
+  #banner::before {
+    height: 100%;
+    width: initial;
+    position: initial;
+    border: none;
+  }
+
+  #banner img {
+    width: 35rem;
+    height: 35rem;
+  }
 }
