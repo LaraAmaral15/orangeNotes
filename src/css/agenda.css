@@ -1,0 +1,82 @@
+/* CALENDÁRIO  ===============================================================================*/
+
+.calendario {
+  margin-top: 5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container .calendar-sidebar {
+  background-color: var(--orange-light);
+}
+
+.container .calendar-sidebar>.month-list>.calendar-months>li.active-month {
+  background-color: var(--orange);
+}
+
+.container .calendar-sidebar>.month-list>.calendar-months>li:hover {
+  background-color: var(--orange);
+}
+
+.container .calendar-sidebar>span#sidebarToggler{
+  background-color: var(--orange-light);
+}
+
+.container th[colspan="7"] {
+  color: var(--orange);
+}
+
+.container th[colspan="7"]::after {
+  background: none;
+}
+
+.container #eventListToggler {
+  background-color: var(--orange-light);
+}
+
+.container .event-list>.event-empty {
+  background-color: rgba(255, 126, 20, 0.15);
+  border-color: var(--orange);
+}
+
+.container .event-list>.event-empty>p {
+  color: var(--orange-light);
+}
+
+.container .calendar-events>.event-header>p {
+  margin-bottom: 2rem;
+}
+
+/* RESPONSIVO ============================================================ */
+
+@media (min-width: 1024px) {
+
+  /* BANNER */
+
+ 
+}
+
+@media (max-width: 425px)  {
+  .container .calendar-sidebar>.calendar-year {
+    background-color: var(--orange-light);
+  }
+
+  .container .calendar-sidebar>.month-list>.calendar-months {
+    background-color: var(--orange-light);
+  }
+
+  .container .calendar-sidebar>.month-list {
+    background-color: rgba(245, 190, 127, 0.733);
+  }
+}
+
+@media (max-width: 768px) {
+  .container .calendar-inner::after {
+      background-color: rgba(226, 161, 107, 0.3);
+  }
+}
+  
+@media (max-width: 600px) {
+  .calendario {
+    margin-top: 15rem;
+  }
+}
