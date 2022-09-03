@@ -1,0 +1,57 @@
+#cards .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cards .input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+#cards .input #valor {
+  width: 50%;
+  border-color: var(--orange);
+}
+
+#cards .input #enviar {
+  width: 10%;
+  max-height: 4rem;
+  min-height: 4rem;
+
+  background-color: var(--orange-light);
+  border-color: var(--orange);
+  border-radius: 0.5rem;
+
+  font-family: 'Roboto', sans-serif;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+#cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+  background-color: var(--orange-light);
+
+  height: 30rem;
+  width: 30rem;
+
+  border-radius: 2rem;
+  margin-top: 5rem;
+}
+
+#cards #digito {
+  width: 30rem;
+  max-height: 30rem;
+  padding: 2rem;
+
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
