@@ -50,6 +50,7 @@
 .cards-btns {
   display: flex;
   justify-content: flex-end;
+
   width: 100%;
   margin: 3rem auto 1rem auto;
   padding: 0 1rem;
@@ -57,21 +58,24 @@
 }
 
 .cards-btns button {
+  background-color: var(--orange);
   position: static;
   transform: translate(0, 0);
-  background-color: var(--orange);
+
   width: 4rem;
   height: 4rem;
-  justify-content: center;
-  align-items: center;
   margin-right: 1rem;
   border-radius: 80rem;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .cards-btns button span {
-  font-weight: bold;
   padding: 1rem 1.5rem 1rem 1rem;
   position: relative;
+
+  font-weight: bold;
   text-decoration: none;
   color: var(--white);
 }
@@ -79,14 +83,16 @@
 .cards-btns button span::before,
 .cards-btns button span::after {
   border-right: 0.3rem solid;
-  display: block;
-  height: 0.8rem;
   margin-top: -0.6rem;
+
+  display: block;
   position: absolute;
   transform: rotate(135deg);
+
+  height: 0.8rem;
+  width: 0;
   right: 1rem;
   top: 50%;
-  width: 0;
   content: '';
 }
 
@@ -103,6 +109,8 @@
 
 .glider.draggable {
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .cards {
@@ -110,6 +118,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   margin: 5rem auto 0 auto;
   padding-top: 12rem;
   width: 95%;
@@ -301,6 +310,7 @@
   background: var(--orange-light);
   border-radius: 1rem;
   box-shadow: 0.6rem 0.5rem 1rem 0 gray;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -316,6 +326,7 @@
   width: 10%;
   outline: none;
   accent-color: currentcolor;
+  color: var(--white);
 }
 
 .listaToDo i {
@@ -325,10 +336,6 @@
 
 .linhaRiscada {
   text-decoration: line-through;
-}
-
-.listaToDo input {
-  color: var(--white);
 }
 
 .listaToDo span {
@@ -363,101 +370,103 @@
       border: none;
     }
 
-    #banner .texto-banner {
-      margin: 0;
-    }
+  #banner .texto-banner {
+    margin: 0;
+  }
 
-    #banner p {
-      margin: 0;
-      width: 70%;
-      display: initial;
-    }
-  
-    /* CARDS ========================================================================================*/
-  
-    .cards {
-      margin: 8rem auto;
-      padding-top: 0;
-    }
-  
+  #banner p {
+    margin: 0;
+    width: 70%;
+    display: initial;
   }
-  
-  
-  @media (max-width: 775px) {
-  
-    /* TO DO ======*/
-  
-    .to-do-header button {
-      right: 7%;
-    }
-  
-    .inserir input {
-      width: 100%;
-    }
-  
-    .inserir button {
-      width: 20%;
-    }
-  
-    .inserir i {
-      font-size: 3rem;
-      padding: 0;
-    }
+
+  /* CARDS ========================================================================================*/
+
+  .cards {
+    margin: 8rem auto;
+    padding-top: 0;
   }
-  
-  
-  @media(max-width: 500px) {
-  
-    .section-header {
-      justify-content: center;
-      font-size: 3rem;
-    }
-  
-    /* CARDS =========  */
-    .cards-box {
-      margin: 0 1rem;
-    }
-  
-    .cards {
-      width: 100%;
-    }
-  
-    .cards-img-container:hover .p-img-back {
-      display: none;
-    }
-  
-    .cards-img-container:hover .p-img-front {
-      display: block;
-    }
-  
-    /* TO DO ======*/
-  
-    .to-do-header button {
-      right: 6%;
-    }
-  
-    .inserir input {
-      width: 100%;
-    }
-  
-    .inserir button {
-      width: 30%;
-    }
-  
-    .inserir i {
-      font-size: 3rem;
-      padding: 0;
-    }
+
+  .cards-btns {
+    display: none;
   }
+}
   
-  @media(max-width: 400px) {
-  
-    .p-img a,
-    .p-img {
-      height: 19rem;
-    }
-  
-    .slider-btns {
-      padding: 0;
-    }
+@media (max-width: 775px) {
+
+  /* TO DO ======*/
+
+  .to-do-header button {
+    right: 7%;
+  }
+
+  .inserir input {
+    width: 100%;
+  }
+
+  .inserir button {
+    width: 20%;
+  }
+
+  .inserir i {
+    font-size: 3rem;
+    padding: 0;
+  }
+}
+
+
+@media(max-width: 500px) {
+
+  .section-header {
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  /* CARDS =========  */
+  .cards-box {
+    margin: 0 1rem;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .cards-img-container:hover .p-img-back {
+    display: none;
+  }
+
+  .cards-img-container:hover .p-img-front {
+    display: block;
+  }
+
+  /* TO DO ======*/
+
+  .to-do-header button {
+    right: 6%;
+  }
+
+  .inserir input {
+    width: 100%;
+  }
+
+  .inserir button {
+    width: 30%;
+  }
+
+  .inserir i {
+    font-size: 3rem;
+    padding: 0;
+  }
+}
+
+@media(max-width: 400px) {
+
+  .p-img a,
+  .p-img {
+    height: 19rem;
+  }
+
+  .slider-btns {
+    padding: 0;
+  }
 }
