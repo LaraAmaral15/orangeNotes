@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -27,8 +28,6 @@
           <li><a onclick="fechaMenu()" href="index.html">Início</a></li>
           <li><a onclick="fechaMenu()" href="agenda.html">Agenda</a></li>
           <li><a onclick="fechaMenu()" href="cards.html">Cards</a></li>
-          <li><a onclick="fechaMenu()" href="#">Artigos</a></li>
-          <li><a onclick="fechaMenu()" href="#">Podcast</a></li>
         </ul>
       </div>
   
@@ -63,15 +62,23 @@
     <section id="cards">
       <div class="container">
         <h2 class="section-header">Cards</h2>
-        
-        <div class="input">
-          <textarea name="valor" id="valor"></textarea>
-          <input type="submit" name="" id="enviar" onclick="chamar()">
+      
+        <div class="cards-container">
+      
+          <div class="cards-header">
+            <button><i class='bx bxs-trash-alt'></i></button>
+          </div>
+          <hr />
+          <br />
+          <div class="inserir">
+            <input class="inserir-texto" id="cardsInput" type="text" />
+            <button><i class='bx bx-plus' id="inserir-icon"></i></button>
+          </div>
+      
+          <ul id="listaCards"></ul>
+      
         </div>
-  
-        <div class="card">
-          <p id="digito"></p>
-        </div>
+      
       </div>
     </section>
   </main>
