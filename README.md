@@ -9,13 +9,13 @@
 </p>
 
 <p>
- <strong>Sobre o projeto:</strong>
+ <h3>Sobre o projeto:</h3>
  
  <ul> 
-  <li><strong>Home:</strong> na página inicial temos 3 cards que são as páginas que há no site. Há também uma to-do list, onde você poderá anotar afazeres do dia ou coisas rápidas, ela fica na tela de início para o usuário poder visualizar de forma mais prática, nela você pode adicionar até 20 itens, marcá-los como concluídos ou excluí-los;</li>
-  <li><strong>Agenda:</strong> na página "Agenda" tem um calendário, o usuário podera ter uma visão mensal e se organizar melhor com seus estudos, o calendário contém as principais datas comemorativas do ano, e suas cores são de acordo com a identidade visual do site;</li>
-  <li><strong>Cards:</strong> nesta página o usuário pode fazer anotações sobre seus aprendizados, uma forma fácil de visualizar e tudo em um só lugar;</li>
-  <li><strong>Obs:</strong> Tanto a to-do list quanto os cards não somem ao recarregar a página, salvando suas anotações; <br> Nos cards escreva da onde é cada anotação, seja com a URL de um vídeo ou nome do curso, assim saberá de onde é e poderá consultar ou rever;</li>
+  <li><h4>Home:</h4> na página inicial temos 3 cards que são as páginas que há no site. Há também uma to-do list, onde você poderá anotar afazeres do dia ou coisas rápidas, ela fica na tela de início para o usuário poder visualizar de forma mais prática, nela você pode adicionar até 20 itens, marcá-los como concluídos ou excluí-los;</li>
+  <li><h4>Agenda:</h4> na página "Agenda" tem um calendário, o usuário poderá ter uma visão mensal e se organizar melhor com seus estudos, o calendário contém as principais datas comemorativas do ano, e suas cores são de acordo com a identidade visual do site;</li>
+  <li><h4>Cards:</h4> nesta página o usuário pode fazer anotações sobre seus aprendizados, uma forma fácil de visualizar tudo em um só lugar;</li>
+  <li><h4>Obs:</h4> Tanto a to-do list quanto os cards não somem ao recarregar a página, salvando suas anotações; <br> Nos cards escreva de onde é cada anotação, seja com a URL de um vídeo ou nome do curso, assim saberá de onde é e poderá consultar ou rever;</li>
 </ul>
 </p>
 
