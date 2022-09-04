@@ -61,20 +61,22 @@
 }
 
 .listaCards {
-  margin-top: 2rem;
-  padding: 1rem;
   background: var(--orange-light);
   border-radius: 1rem;
   box-shadow: 0.6rem 0.5rem 1rem 0 gray;
+  
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 3rem;
   flex-direction: column;
   text-align: center;
+  
   width: 50%;
   min-height: 30rem;
+
   margin: 2rem auto;
+  padding: 1rem;
 }
 
 .listaCards span {
@@ -149,5 +151,9 @@
   .inserir i {
     font-size: 3rem;
     padding: 0;
+  }
+
+  .listaCards {
+    width: 100%;
   }
 }

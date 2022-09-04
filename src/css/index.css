@@ -29,7 +29,7 @@
   }
 
   to {
-    width: 7.1em;
+    width: 7.2em;
   }
 }
 
@@ -109,8 +109,6 @@
 
 .glider.draggable {
   overflow-x: hidden;
-  display: flex;
-  justify-content: center;
 }
 
 .cards {
@@ -119,7 +117,7 @@
   justify-content: center;
   align-items: center;
 
-  margin: 5rem auto 0 auto;
+  margin: 3rem auto 0 auto;
   padding-top: 12rem;
   width: 95%;
 }
@@ -389,6 +387,11 @@
 
   .cards-btns {
     display: none;
+  }
+
+  .cards .glider.draggable {
+    display: flex;
+    justify-content: center;
   }
 }
   

@@ -48,13 +48,6 @@
 
 /* RESPONSIVO ============================================================ */
 
-@media (min-width: 1024px) {
-
-  /* BANNER */
-
- 
-}
-
 @media (max-width: 425px)  {
   .container .calendar-sidebar>.calendar-year {
     background-color: var(--orange-light);
@@ -77,6 +70,6 @@
   
 @media (max-width: 600px) {
   .calendario {
-    margin-top: 15rem;
+    margin-top: 10.5rem;
   }
 }
