@@ -1,9 +1,22 @@
 <h1>Orange Notes</h1>
-<p><strong>Problemática:</strong> Quando estamos no processo de aprendizado, acabamos consumindo conteúdos sobre diversos assuntos, seja através de cursos, vídeo aulas, artigos  entre outros.
-Isso acaba desorganizando o dia a dia de estudo, criando o sentimento de que não estamos progredindo, e consequentemente, não evoluímos nessa busca pelo conhecimento.
+<p>
+  <strong>Problemática:</strong> Quando estamos no processo de aprendizado, acabamos consumindo conteúdos sobre diversos assuntos, seja através de cursos, vídeo aulas, artigos  entre outros.
+  Isso acaba desorganizando o dia a dia de estudo, criando o sentimento de que não estamos progredindo, e consequentemente, não evoluímos nessa busca pelo conhecimento.
 </p>
 
-<p><strong>Proposta:</strong> Diante da nossa problemática surge o Orange Notes, uma plataforma onde as pessoas poderão organizar seus cursos, vídeo aulas, artigos e tudo que envolve aprendizado em um local só, podendo ver seu progresso.
+<p>
+  <strong>Proposta:</strong> Diante da nossa problemática surge o Orange Notes, uma plataforma onde as pessoas poderão organizar seus cursos, vídeo aulas, artigos e  tudo que envolve aprendizado em um local só, podendo ver seu progresso.
+</p>
+
+<p>
+ <strong>Sobre o projeto:</strong>
+ 
+ <ul> 
+  <li><strong>Home:</strong> na página inicial temos 3 cards que são as páginas que há no site. Há também uma to-do list, onde você poderá anotar afazeres do dia ou coisas rápidas, ela fica na tela de início para o usuário poder visualizar de forma mais prática, nela você pode adicionar até 20 itens, marcá-los como concluídos ou excluí-los;</li>
+  <li><strong>Agenda:</strong> na página "Agenda" tem um calendário, o usuário podera ter uma visão mensal e se organizar melhor com seus estudos, o calendário contém as principais datas comemorativas do ano, e suas cores são de acordo com a identidade visual do site;</li>
+  <li><strong>Cards:</strong> nesta página o usuário pode fazer anotações sobre seus aprendizados, uma forma fácil de visualizar e tudo em um só lugar;</li>
+  <li><strong>Obs:</strong> Tanto a to-do list quanto os cards não somem ao recarregar a página, salvando suas anotações; <br> Nos cards escreva da onde é cada anotação, seja com a URL de um vídeo ou nome do curso, assim saberá de onde é e poderá consultar ou rever;</li>
+</ul>
 </p>
 
 <h2>1°/2° Dia</h2>
@@ -39,9 +52,10 @@ Isso acaba desorganizando o dia a dia de estudo, criando o sentimento de que nã
   <li>Coloquei em prática o que sei sobre especificidade, no css isso é muito importante;</li>
 </ul>
 
-<h2>7°/8° Dia</h2>
-<p>No sétimo dia melhorei o código, o organizei e continuei o desenvolvimento da página "Organização". <br> No oitavo dia comecei o desenvolvimento de uma nova página, a "cards".</p>
+<h2>7°/8°/9° Dia</h2>
+<p>No sétimo dia melhorei o código, o organizei e continuei o desenvolvimento da página "Organização". <br> No oitavo dia comecei o desenvolvimento de uma nova página, a "cards". <br> No nono dia finalizei o projeto.</p>
 <h3> Destaques: </h3>
 <ul> 
   <li>Estou aprendendo a fazer um código que pode ser reutilizado em várias partes do site;</li>
+   <li>Utilizei input;</li>
 </ul>
