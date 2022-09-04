@@ -302,6 +302,8 @@ body.menu-expandido button {
   nav .container {
     align-items: center;
     justify-content: space-around;
+    padding-right: 8rem;
+    gap: 24rem;
   }
 
   nav#navegacao .logo {
